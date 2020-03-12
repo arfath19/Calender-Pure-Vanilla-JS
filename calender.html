@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <title>Calender</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Amatic SC';
+            color: #fff;
+            font-weight: 400;
+            font-size: 2em;
+            background-color: #018def;
+        }
+        .container{
+            
+            margin: 0 auto;
+            /* border-bottom:1px solid black; */
+            /* min-height: 50vh; */
+            width: 500px;
+            font-size: 2.5em;
+        }
+        ul{
+            display: grid;
+            /* border: 1px solid blue; */
+            grid-template-columns: repeat(7,1fr);
+            
+        }
+         .start{
+            font-size: .5em;
+        } 
+        li{
+            justify-self: center;
+            padding: 10px;
+        }
+       .time{
+           margin:  0 auto;
+            font-size: 2.3em;
+            width: 500px;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+        .active{
+            background-color: #bada55;
+            border-radius: 10px;
+            color: #018def;
+            font-weight: bold;
+        }
+        .btn{
+            display: flex;
+            font-size: 15px;
+           
+            justify-content: space-between;
+
+        }
+        button{
+            padding: 2px 4px;
+            background-color: #68def5;
+            color: #777;
+            font-weight: bold;
+        }
+    .month{
+        color: white;
+        font-size: 3.5em;
+        font-weight: bold;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="magic()"> Change</button> -->
+    <div class="time">
+    </div>
+    
+    <div class="container">
+            <div class="btn">
+                <button onclick="prev()">  Prev<-</button>
+                <span class="month"></span>
+                <button onclick="next()">  Next-></button>
+            </div>
+        <ul style="border-bottom: 1px solid white;">
+           <li>S</li>
+           <li>M</li>
+           <li>T</li>
+           <li>W</li>
+           <li>T</li>
+           <li>F</li>
+           <li>S</li>
+       </ul>
+       <ul class="start">
+
+        </ul>
+    </div>
+    
+    <script src="resources/js/calender.js"></script>
+</body>
+</html>
