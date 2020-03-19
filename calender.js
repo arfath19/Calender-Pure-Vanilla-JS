@@ -1,3 +1,4 @@
+// ᐯᐱᐳ
 let monthCount=new Date().getMonth()+1;
 
 const monthsName=['January','February','March','April','May','June','July','August','September','October','November','December'];
